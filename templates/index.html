@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}
+Air Quality Detection 
+{% endblock title %}
+
+{% block content %}
+
+		<br>
+		<br>		
+		<br>
+		<br>
+		
+	<div class="row justify-content-center ">
+			<div class="text-center">
+					<br>
+					{% if not user.is_authenticated %}
+						<h1> <b> Air Quality Detection Using Land Coverage </b> </h1>
+					{% else %}
+						<h1> <b> Welcome to Air Quality Detection Using Land Coverage, {{ user }} . ! </b> </h1>
+					{% endif %}
+
+					<br>
+					 <br>
+				<p style="text-align:justify;" >
+	
+					<b>
+
+						Air pollution is the one of most dangerous problem in world , as it badly effects on human health , animal health and environment system. Air pollution is one of the largest
+						environmental health risks in India today. Quality of the air in all areas is the most important factor that directly influences the incidence of diseases and decreases the quality
+						of life. Taking appropriate decisions in a timely period depends on the measurement and
+						analysis of the parameters of the air, which creates the need for the development of real
+						time air quality detection. The use of colored pictures of earth surface makes it possible
+						to do a detailed level analysis of major pollutants and their sources. These detection
+						systems are important components in many particular area projects for detecting air
+						quality and for controlling the main pollutant concentrations in specific areas.
+						In this project we present an approach for cost-effective measurement of relevant environmental parameters, based on a Land coverage analysis. These application used for
+						test local environmental air quality
+
+					</b>
+			
+			
+			</div>
+		</div>
+	
+			
+
+		
+			
+{% endblock content %}

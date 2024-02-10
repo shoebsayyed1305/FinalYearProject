@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block title %}
+Air Quality Detection 
+{% endblock title %}
+
+{% block content %}
+
+<h1 class="heading" style="text-align: center;">Welcome to Air Quality Detection Using Land Coverage, {{ user }} . ! </h1><hr class="hr">
+
+
+				<div class="col-md-50">
+
+					<br>
+					<br>
+
+					<img src="{{ input_image.url }}" class="img-responsive" style="width: 30%; float: left; margin-right: 10px;" />
+
+					<br>
+					<br>
+					<br>
+
+					<h1 style="color :#2c0a47;"><b> Detected Air Quality :   {{ result }} </b></h1>
+					<br>
+					<br>
+					<br>
+
+					<br>
+					<br>
+					<br>
+					<br>
+
+
+					
+
+				</div> 
+
+
+{% endblock content %}

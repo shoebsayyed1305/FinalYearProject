@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+Air Quality Detection 
+{% endblock title %}
+
+{% block content %}
+
+		   
+			<h1> <b> Welcome to Air Quality Detection Using Land Coverage, {{ user }} . ! </b> </h1>
+
+			<br>
+			<br>
+			<body> 
+				<form method = "post" enctype="multipart/form-data"> 
+                {% csrf_token %} 
+                {{ form.as_p }} 				
+
+				<br>
+                <button type="submit"  class="btn btn-lg btn-outline-primary">Upload Image</button> 
+				</form> 
+				</body> 
+
+{% endblock content %}
